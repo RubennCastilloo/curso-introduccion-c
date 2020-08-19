@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+main()
+{
+    int n, c;
+    float nom, sal;
+
+    printf("Calculo de la nomina \n\n");
+    printf("Ingrese el total de empleados: ");
+    scanf("%d", &n);
+
+    for(c=1;c<=n;c=c+1)
+    {
+    printf("\n Ingresa el salario del trabajador %d: ", c);
+    scanf("%f", &sal);
+
+    nom=nom+sal;
+    }
+    printf("\n La nomina a pagar es $&.2f", nom);
+
+}
